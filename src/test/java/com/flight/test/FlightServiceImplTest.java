@@ -87,9 +87,7 @@ public class FlightServiceImplTest {
         verify(flightRepo).save(any(Flight.class));
     }
 
-    // ---------------------------------------------------------
-    // Test: searchFlights - only onward flights
-    // ---------------------------------------------------------
+
     @Test
     public void searchFlights_onlyOnward_whenNotRoundTrip() {
         SearchFlightRequest req = new SearchFlightRequest();
