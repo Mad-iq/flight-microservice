@@ -45,7 +45,6 @@ public class FlightServiceImpl implements FlightService {
         LocalDateTime start = LocalDateTime.parse(req.getStartDate());
         LocalDateTime end = LocalDateTime.parse(req.getEndDate());
 
-        // SIMPLE UUID FLIGHT ID
         String flightId = UUID.randomUUID().toString().substring(0, 8).toUpperCase();
 
         Flight flight = new Flight();
